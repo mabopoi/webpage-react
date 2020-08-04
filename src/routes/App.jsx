@@ -1,11 +1,17 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import Layout from '../components/Layout';
+import Home from '../containers/Home';
+import ProfileSearch from '../containers/ProfileSearch'
 
 const App = () => (
     <BrowserRouter>
-        <Switch>
-            <Route path="/" component={Home} />  
-        </Switch>    
+        <Layout>
+            <Switch>
+                <Route exact path="/" component={Home} /> 
+                <Route exact path="/search" component={ProfileSearch} /> 
+            </Switch>    
+        </Layout>
     </BrowserRouter>
 )
 
