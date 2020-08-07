@@ -1,10 +1,11 @@
 import React from 'react';
 
 const Profile = props => {
-    const {username} = props;
+    const {username, error,hasEnoughLength,isLoading} = props;
     return(
         <div>
-            {username ? <div className="profile">
+            {username &&
+             <div className="profile">
                  <div className="profile__username">
                         <h1> {username}</h1>
                 </div>
@@ -19,8 +20,16 @@ const Profile = props => {
                     <h5>Chess960</h5>
                     <h5>Puzzle</h5>
                 </div>
-              </div>  
-            : null}
+            </div>}
+            {error && 
+                <h1>This username might not exist</h1>
+            }
+            {!hasEnoughLength && 
+                <h1>The username must contain at least 2 characters</h1>
+            }
+            { isLoading &&
+                <h1>Loading...</h1>
+            }
         </div>
     )
 }
