@@ -42,10 +42,11 @@ const ProfileSearch = () => {
                     Search
                 </button>
             </form>
-           <Profile username= {data.username} 
-                    error={error} 
+           <Profile error={error} 
                     hasEnoughLength={hasEnoughLength}
-                    isLoading={isLoading}/>
+                    isLoading={isLoading}
+                    {...data}
+                   />
        </div>  
     )
 }

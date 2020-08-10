@@ -1,0 +1,38 @@
+.hero{
+    background-color: green;
+    margin: 0;
+    display: grid;
+    height: 50vh;
+    grid-template-rows: 70% 30% ;
+    background: linear-gradient(#5F5F5F,#666666);
+}
+
+.hero__text{
+    margin: inherit;
+    grid-column: 1/-1;
+}
+
+.hero__list{
+    border-radius: 100px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+}
+
+.hero__option--tv{
+    border-radius: 50px 0 0 50px ;
+    background-color: grey;
+    padding-top: 40px;
+}
+
+.hero__option--tv:hover{
+    background-color:white;
+}
+
+.hero__option--profile{
+    @extend .hero__option--tv;
+    border-radius: 0 50px 50px 0;
+}
+
+
+

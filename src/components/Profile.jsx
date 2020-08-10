@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Profile = props => {
-    const {username, error,hasEnoughLength,isLoading} = props;
+    const {username, error,hasEnoughLength,isLoading,perfs,language,completionRate, online,profile} = props;
     return(
         <div>
             {username &&
@@ -10,15 +10,16 @@ const Profile = props => {
                         <h1> {username}</h1>
                 </div>
                 <div className="profile__data">
-                        <h3> Full Name</h3>
-                        <h3> Biography</h3>
-                        <h3> Language</h3>
+                        {online ? <h3> Status: Online</h3>: <h3>Status: Offline</h3>}
+                        {(profile?.firstName && profile?.lastName) && <h3> Full Name: {profile?.firstName} {profile?.lastName}</h3>}
+                        <h3> Completion rate: {completionRate}%</h3>
+                        <h3> Language: {language}</h3>
                 </div>
                 <div className="profile__ratings">
-                    <h5>Blitz</h5>
-                    <h5>Bullet</h5>
-                    <h5>Chess960</h5>
-                    <h5>Puzzle</h5>
+                    <h5>Blitz: {perfs.blitz?.rating}</h5>
+                    <h5>Bullet:{perfs.bullet?.rating}</h5>
+                    <h5>Rapid:{perfs.rapid?.rating}</h5>
+                    <h5>Puzzle:{perfs.puzzle?.rating}</h5>
                 </div>
             </div>}
             {error && 

@@ -1,0 +1,26 @@
+.header{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background: #333333;  
+    margin: 0;
+    height:20vh;
+    color: white;
+}
+
+.header__imageContainer--lichess{
+    
+    justify-self: end;
+    align-self: center;
+}
+
+
+.header__imageContainer--react{
+    
+    justify-self: start;
+    align-self: center;
+}
+
+.header__title{
+    justify-self: center;
+    padding-top: 40px;
+}
