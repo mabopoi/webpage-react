@@ -2,7 +2,7 @@ import React from 'react';
 import '../assets/styles/components/Header.scss'
 
 const Header = () => (
-    <div className="header">
+    <header className="header">
         <div className="header__imageContainer--lichess">
             <img className="header__image--lichess" src="" alt="Lichess logo"/>
         </div>
@@ -10,7 +10,7 @@ const Header = () => (
         <div alt="ReactJS icon" className="header__imageContainer--react">
             <img src="" alt="ReactJS icon" className="header__image--react"/>
         </div>
-    </div>
+    </header>
 );
 
 export default Header;

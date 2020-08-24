@@ -7,7 +7,7 @@ const Home = () => (
      <div className="hero__text">
         <h1>What would you like to do?</h1>
      </div>
-     <div className='hero__list'>
+     <nav className='hero__list'>
         <div className='hero__option--tv'>
             <Link to="/tv">
                 View a match in LichessTV
@@ -18,7 +18,7 @@ const Home = () => (
                 Search a profile in Lichess
             </Link>
         </div>
-     </div>
+     </nav>
 </div>
 );
 

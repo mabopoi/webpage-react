@@ -1,15 +1,19 @@
+@import '../global.scss';
+
 .hero{
     background-color: green;
     margin: 0;
     display: grid;
     height: 50vh;
     grid-template-rows: 70% 30% ;
-    background: linear-gradient(#5F5F5F,#666666);
+    background: linear-gradient($color1,$color3);
 }
 
 .hero__text{
     margin: inherit;
     grid-column: 1/-1;
+    text-align: center;
+    color: $fontColor;
 }
 
 .hero__list{

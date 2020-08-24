@@ -1,10 +1,11 @@
+@import '../global.scss';
 .header{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    background: #333333;  
+    background: $color2;  
     margin: 0;
     height:20vh;
-    color: white;
+    color: #fafafa;
 }
 
 .header__imageContainer--lichess{

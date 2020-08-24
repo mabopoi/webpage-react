@@ -1,0 +1,24 @@
+@import '../global.scss';
+
+.profileSearch{
+    display: grid;
+    grid-template-columns: 40% 60% ;
+    background:linear-gradient($color1,$color3);
+    color: $fontColor;
+}
+
+.profileSearch__container{
+    grid-column: 1/2;
+}
+
+.profileSearch__button{
+    @include searchButton;
+}
+
+@media screen and (max-width:480px){
+    .profileSearch{
+        grid-template-columns: 100%;
+        grid-template-rows: 80px 80%;
+        //height: 60vh;
+    }
+}

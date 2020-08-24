@@ -1,9 +1,10 @@
 import React from 'react';
+import '../assets/styles/components/Profile.scss'
 
 const Profile = props => {
     const {username, error,hasEnoughLength,isLoading,perfs,language,completionRate, online,profile} = props;
     return(
-        <div>
+        <React.Fragment>
             {username &&
              <div className="profile">
                  <div className="profile__username">
@@ -31,7 +32,7 @@ const Profile = props => {
             { isLoading &&
                 <h1>Loading...</h1>
             }
-        </div>
+        </React.Fragment>
     )
 }
 

@@ -1,0 +1,14 @@
+@mixin searchButton {
+    padding: 5px 10px; 
+    background: #31f371;
+    border: none;
+    border-radius: 5px;
+    &:hover{
+        box-shadow: 0px 3px 5px green
+    }
+}
+
+$color1: #bbbbbb;
+$color2: #666666;
+$color3: #dadada;
+$fontColor: #473030;
