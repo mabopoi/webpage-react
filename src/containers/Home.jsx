@@ -8,16 +8,16 @@ const Home = () => (
         <h1>What would you like to do?</h1>
      </div>
      <nav className='hero__list'>
-        <div className='hero__option--tv'>
-            <Link to="/tv">
-                View a match in LichessTV
-            </Link>
-        </div>
-        <div className='hero__option--profile'>
-            <Link to="/search">
-                Search a profile in Lichess
-            </Link>
-        </div>
+        <Link to="/tv">
+            <div className='hero__option--tv'>
+                    View a match in LichessTV
+            </div>
+        </Link>
+        <Link to="/search">
+            <div className='hero__option--profile'>
+                    Search a profile in Lichess
+            </div>
+         </Link>
      </nav>
 </div>
 );

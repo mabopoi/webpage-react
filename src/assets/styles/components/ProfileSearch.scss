@@ -5,20 +5,27 @@
     grid-template-columns: 40% 60% ;
     background:linear-gradient($color1,$color3);
     color: $fontColor;
+    font-family: $fontFamily;
 }
 
 .profileSearch__container{
     grid-column: 1/2;
+    text-align: center;
 }
+
 
 .profileSearch__button{
     @include searchButton;
+}
+
+.profileSearch__profile{
+    text-align: center;
+    padding-left: 30px;
 }
 
 @media screen and (max-width:480px){
     .profileSearch{
         grid-template-columns: 100%;
         grid-template-rows: 80px 80%;
-        //height: 60vh;
     }
 }

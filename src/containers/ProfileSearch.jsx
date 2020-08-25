@@ -47,10 +47,10 @@ const ProfileSearch = () => {
             </div>
             <div className='profileSearch__profile'>
             <Profile error={error} 
-                        hasEnoughLength={hasEnoughLength}
-                        isLoading={isLoading}
-                        {...data}
-                    />
+                     hasEnoughLength={hasEnoughLength}
+                     isLoading={isLoading}
+                     {...data}
+            />
             </div>
        </section> 
     )

@@ -1,0 +1,10 @@
+@import '../global.scss';
+
+.footer{
+    background-color: $color2;
+    color: white;
+    font-family: $fontFamily;
+    h4{
+        margin:0;
+    }
+}
