@@ -6,13 +6,18 @@
     background:linear-gradient($color1,$color3);
     color: $fontColor;
     font-family: $fontFamily;
+    height: 60vh;
 }
 
 .profileSearch__container{
     grid-column: 1/2;
     text-align: center;
+    align-self: center;
 }
 
+.profileSearch__bar{
+    margin: 10px;
+}
 
 .profileSearch__button{
     @include searchButton;
@@ -21,11 +26,18 @@
 .profileSearch__profile{
     text-align: center;
     padding-left: 30px;
+    align-self: center;
 }
 
 @media screen and (max-width:480px){
     .profileSearch{
         grid-template-columns: 100%;
-        grid-template-rows: 80px 80%;
+        grid-template-rows: 20% 80%;
+        height: 80vh;
+    }
+    .profileSearch__profile{
+        height:auto;
+        margin: 20px 0px 0px 20px;
+        padding-left: 0;
     }
 }

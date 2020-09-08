@@ -3,7 +3,7 @@
 .hero{
     margin: 0;
     display: grid;
-    height: 50vh;
+    height: 60vh;
     grid-template-rows: 70% 30% ;
     background: linear-gradient($color1,$color3);
     font-family: $fontFamily;
@@ -14,6 +14,7 @@
     grid-column: 1/-1;
     text-align: center;
     color: $fontColor;
+    align-self: center;
 }
 
 .hero__list{

@@ -4,7 +4,14 @@
     background-color: $color2;
     color: white;
     font-family: $fontFamily;
+    height: auto;
+    text-align: center;
+    padding: 10px;
     h4{
-        margin:0;
+        font-size: 24px;
     }
+}
+
+.footer__link{
+    margin: 10px;
 }

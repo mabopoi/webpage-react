@@ -1,6 +1,6 @@
 import React from 'react';
 import Profile from '../components/Profile';
-import '../assets/styles/components/ProfileSearch.scss'
+import '../assets/styles/components/ProfileSearch.scss';
 
 const ProfileSearch = () => {
     const API = "https://lichess.org/api/user/";
@@ -38,7 +38,7 @@ const ProfileSearch = () => {
                 <h3 className="profileSearch___title">
                     Write the username you want to search
                 </h3>
-                <form className="profileSearch__container--form" onSubmit={handleSubmit}>
+                <form className="profileSearch__containerForm" onSubmit={handleSubmit}>
                     <input type="text" onChange={handleChange} className="profileSearch__bar"/>
                     <button type="submit"  className="profileSearch__button">
                         Search
@@ -46,11 +46,11 @@ const ProfileSearch = () => {
                 </form>
             </div>
             <div className='profileSearch__profile'>
-            <Profile error={error} 
-                     hasEnoughLength={hasEnoughLength}
-                     isLoading={isLoading}
-                     {...data}
-            />
+                <Profile error={error} 
+                        hasEnoughLength={hasEnoughLength}
+                        isLoading={isLoading}
+                        {...data}
+                />
             </div>
        </section> 
     )
