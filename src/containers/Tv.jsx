@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import '../assets/styles/components/Tv.scss'
 
 const Tv = () => {
     return (
-        <section>
+        <section className='tv'>
             <h1> Feature not available now :\ </h1>
         </section>
     )

@@ -1,0 +1,15 @@
+@import '../global.scss'; 
+
+.error404{
+    height: 54vh;
+    background: linear-gradient($color1,$color3);
+    text-align: center;
+    padding-top:40px;
+    h1{
+        margin: 0;
+    }
+}
+
+.error404__button{
+    @include searchButton;
+}
